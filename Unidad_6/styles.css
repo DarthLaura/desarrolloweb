@@ -1,3 +1,33 @@
 body{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Patrick Hand', cursive;
+  background: url('img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+h1{
+  font-size: 3em;
+}
+.paragraph{
+  font-size: 1.5em;
+}
+
+.intereses{
+  font-size: 1.5em;
+}
+
+img{
+  border-radius: 50%;
+}
+.girar{
+  width: 190px;
+  height: 180px;
+  margin: auto;
+  transition: all 1s;
+  transform-origin: center center;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px black;
+}
+
+.girar:hover{
+  transform: rotate3d(1,1,1,360deg);
 }
