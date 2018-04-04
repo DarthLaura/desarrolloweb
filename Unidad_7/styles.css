@@ -27,7 +27,13 @@ img{
 
 .intereses{
   font-size: 1.3em;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .paragraph{
+  margin-top: 40px;
   font-size: 1em;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
 }
