@@ -4,14 +4,7 @@ body{
   background-size: cover;
 }
 h1{
-  font-size: 3em;
-}
-.paragraph{
-  font-size: 1.5em;
-}
-
-.intereses{
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 img{
@@ -30,4 +23,11 @@ img{
 
 .girar:hover{
   transform: rotate3d(1,1,1,360deg);
+}
+
+.intereses{
+  font-size: 1.3em;
+}
+.paragraph{
+  font-size: 1em;
 }
