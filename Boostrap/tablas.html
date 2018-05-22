@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="functions.js"></script>
+    <title>tables</title>
+  </head>
+  <body>
+    <button id="btnAdd">New</button>
+    <table id="tblData">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>
+            <script>
+            $function(){
+              $(".btnEdit").bind("click", Edit);
+              $(".btnDelete").bind("click", Delete);
+              $(".btnAdd").bind("click", Add);
+            };
+            </script>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+  </body>
+
+</html>

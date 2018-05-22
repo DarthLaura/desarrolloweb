@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
     <title>travel Planner</title>
   </head>
   <body>
@@ -46,36 +47,36 @@
       </div>
     </div>
 
-    <div class="container">
-    <h2>Striped Rows</h2>
-    <p>The .table-striped class adds zebra-stripes to a table:</p>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-        </tr>
-        <tr>
-          <td>Mary</td>
-          <td>Moe</td>
-          <td>mary@example.com</td>
-        </tr>
-        <tr>
-          <td>July</td>
-          <td>Dooley</td>
-          <td>july@example.com</td>
-        </tr>
-      </tbody>
+<div class="container">
+    <h2>Planeador</h2>
+    <p>Ingresa tus gastos diarios en la siguiente tabla:</p>
+    <table class="table table-bordered table-striped table-hover table-condensed  text-center" id="DynamicTable">
+    <thead>
+    <tr>
+      <th class="text-center">Check In</th>
+      <th class="text-center">Check Out</th>
+      <th class="text-center">Noches</th>
+      <th class="text-center">Ciudad</th>
+      <th class="text-center">Hospedaje</th>
+      <th class="text-center">Comida</th>
+      <th class="text-center">Transporte</th>
+      <th class="text-center">TOTAL</th>
+      <th class="text-center"><button id="addNewRow" class="btn btn-primary btn-sm">Agregar fila</button></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
     </table>
 </div>
+
+  <button onclick="datosPrimeraFila()">Try it</button>
+  <script src="script.js"></script>
+  <!--JS Files-->
+  <script src="bootstable.js"></script>
+  <script>
+  $('#DynamicTable').SetEditable({ $addButton: $('#addNewRow')});
+  </script>
 
 
   </body>
