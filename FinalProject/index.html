@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
@@ -20,6 +21,9 @@
     <div class="jumbotron text-center">
         <h1>Travel Planner</h1>
         <p>Let's plan your next adventure!!!</p>
+        <div class="girar">
+          <img src="img/airplane.png" alt="">
+        </div>
     </div>
 
 
@@ -45,7 +49,15 @@
         <input class="form-control" id="precio_vuelta" type="number">
       </div>
       </div>
+      <div class="form-group row">
+        <div class="col-xs-4">
+            <label for="ex1">¿Cuál es tu presupuesto? </label>
+            <input class="form-control" id="presupuesto" type="number">
+        </div>
+      </div>
     </div>
+
+
 
 <div class="container">
     <h2>Planeador</h2>
@@ -70,13 +82,25 @@
     </table>
 </div>
 
-  <button onclick="datosPrimeraFila()">Try it</button>
+<div class="container">
+  <button type="button" class="btn btn-primary btn-lg" onclick="calcularTotal()">Calcular</button>
+</div>
+
+
+<div class="container">
+  <h2>En total necesitas:</h2>
+  <div id="total"class="well"></div>
+</div>
+
+
+
   <script src="script.js"></script>
   <!--JS Files-->
   <script src="bootstable.js"></script>
   <script>
   $('#DynamicTable').SetEditable({ $addButton: $('#addNewRow')});
   </script>
+
 
 
   </body>

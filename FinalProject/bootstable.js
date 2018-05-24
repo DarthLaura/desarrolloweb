@@ -3,7 +3,7 @@ function IterarCamposEdit(t, n) {
         if (null == colsEdi) return !0;
         for (var n = 0; n < colsEdi.length; n++)
             if (t == colsEdi[n]) return !0;
-        return !1
+              return !1
     }
     var o = 0;
     t.each(function() {
@@ -26,6 +26,7 @@ function ModoEdicion(t) {
 function rowAcep(t) {
     var n = $(t).parents("tr"),
         i = n.find("td");
+
     ModoEdicion(n) && (IterarCamposEdit(i, function(t) {
         var n = t.find("input").val();
         t.html(n)
