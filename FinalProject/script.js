@@ -21,6 +21,11 @@ for(var i = 1; i < table.rows.length; i++){
 }
 
       totalFinal+=sumaComida+sumaHospedaje+sumaTransporte+precio_ida+precio_vuelta;
+
+      document.getElementById("in").innerHTML =" ";
+      document.getElementById("out").innerHTML =" ";
+      document.getElementById("city").innerHTML =" ";
+
       document.getElementById("sumaNoches").innerHTML =sumaNoches;
       document.getElementById("sumaHospedaje").innerHTML =sumaHospedaje;
       document.getElementById("sumaComida").innerHTML =sumaComida;
