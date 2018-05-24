@@ -67,12 +67,12 @@
     <tr>
       <th class="text-center">Check In</th>
       <th class="text-center">Check Out</th>
-      <th class="text-center">Noches</th>
+      <th class="text-center"># Noches</th>
       <th class="text-center">Ciudad</th>
-      <th class="text-center">Hospedaje</th>
-      <th class="text-center">Comida</th>
-      <th class="text-center">Transporte</th>
-      <th class="text-center">TOTAL</th>
+      <th class="text-center">Hospedaje $</th>
+      <th class="text-center">Comida $</th>
+      <th class="text-center">Transporte $</th>
+      <th class="text-center">TOTAL DÍA</th>
       <th class="text-center"><button id="addNewRow" class="btn btn-primary btn-sm">Agregar fila</button></th>
     </tr>
     </thead>
@@ -81,6 +81,23 @@
     </tbody>
     </table>
 </div>
+
+<div class="container">
+    <table class="table text-center" id="tablaResultados">
+      <thead>
+      <tr>
+        <th class="text-center"> </th>
+        <th class="text-center"> </th>
+        <th id="sumaNoches" class="text-center"></th>
+        <th class="text-center"> </th>
+        <th id="sumaHospedaje" class="text-center"></th>
+        <th id="sumaComida" class="text-center"></th>
+        <th id="sumaTransporte" class="text-center"></th>
+      </tr>
+      </thead>
+    </table>
+</div>
+
 
 <div class="container">
   <button type="button" class="btn btn-primary btn-lg" onclick="calcularTotal()">Calcular</button>
